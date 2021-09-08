@@ -1,11 +1,45 @@
-h1{
+h1 {
 
     font-weight: bolder;
     color: rgb(0, 100, 146);
     text-align: center;
 }
-body{
+body {
 
     background-color: rgb(73, 73, 73);
 
 }
+.drop-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-contents a:hover {background-color: #ddd;}
+  
+.dropdown-menu:hover .dropdown-contents {display: block;}
+  
+.dropdown-menu:hover .drop-button {background-color: #3e8e41;}
