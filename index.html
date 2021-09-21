@@ -3,18 +3,37 @@
     <head>
         <link rel="stylesheet" href="site-style.css">
         <link rel="icon" href="Images/icon.png">
+        <? php include 'connection.php; ?>
         <title>Test Project</title>
     </head>
 
     <body>
         <h1>This is the heading of the site's body</h1>
-        <div class="dropdown-menu">
-            <button class="drop-button">Hover Me!</button>
-            <div class="dropdown-contents">
-                <a href="Pages/Page1.html">Page 1</a>
-                <a href="Pages/Page2.html">Page 2</a>
-                <a href="Pages/Page3.html">Page 3</a>
-                <a href="Pages/Page4.html">Page 4</a>
+        <div class="menu">
+            <form action="/action_page.php">
+                <label for="username">=Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="dropdown-menu1">
+                <button class="drop-button1">Menu 1</button>
+                <div class="dropdown-contents1">
+                    <a href="Pages/Page1.html">Page 1</a>
+                    <a href="Pages/Page2.html">Page 2</a>
+                    <a href="Pages/Page3.html">Page 3</a>
+                    <a href="Pages/Page4.html">Page 4</a>
+                </div>
+            </div>
+            <div class="dropdown-menu1">
+                <button class="drop-button1">Menu 2</button>
+                <div class="dropdown-contents1">
+                    <a href="Pages/Page1.html">Page 1</a>
+                    <a href="Pages/Page2.html">Page 2</a>
+                    <a href="Pages/Page3.html">Page 3</a>
+                    <a href="Pages/Page4.html">Page 4</a>
+                </div>
             </div>
         </div>
     </body>
